@@ -6,7 +6,7 @@ import android.widget.FrameLayout;
 
 import com.baidu.majia.R;
 import com.baidu.majia.base.BaseActivity;
-import com.baidu.majia.fragment.CommendFragment;
+import com.baidu.majia.fragment.RecommendFragment;
 import com.baidu.majia.fragment.DiscoverFragment;
 import com.baidu.majia.fragment.FocusFragment;
 import com.baidu.majia.fragment.MineFragment;
@@ -149,7 +149,7 @@ public class MainActivity extends BaseActivity {
     private void setFragment(int index) {
         switch (index) {
             case RECOMMEND_TAG:
-                replaceFragment(CommendFragment.class, RECOMMEND_FRAGMENT_TAG);
+                replaceFragment(RecommendFragment.class, RECOMMEND_FRAGMENT_TAG);
                 break;
             case FOCUS_TAG:
                 replaceFragment(FocusFragment.class, FOCUS_FRAGMENT_TAG);

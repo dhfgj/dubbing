@@ -1,0 +1,49 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/index_tabs_container"
+        android:background="#FF6307"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_title_height">
+
+        <com.baidu.majia.widgets.PagerSlidingTabStrip
+            android:id="@+id/index_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="#FF6307"
+            app:pstsShouldExpand="false"
+            app:pstsDividerColor="@android:color/transparent"
+            app:pstsUnderlineHeight="1dip"
+            app:pstsUnderlineColor="@color/transparent"
+            app:pstsIndicatorHeight="2dip"
+            app:pstsTextSelectedColor="@color/white"
+            android:textColor="#ffcab9"
+            android:textSize="17sp"
+            app:pstsIndicatorColor="@color/white"
+            app:pstsSmoothScrollWhenClickTab="false"
+            app:pstsmFadeEnabled="false"
+            app:pstsScaleZoomMax="0"
+            app:pstsTabPaddingLeftRight="12.5dip"
+            app:pstsIndicatorPadding="14dip"
+            app:pstsScrollOffset="30dip"
+
+            app:pstsLastPaddingRight="43dip"
+            />
+
+    </RelativeLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/index_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/index_tabs_container"/>
+
+
+</RelativeLayout>

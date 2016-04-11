@@ -8,6 +8,8 @@ import com.baidu.majia.utils.ImageUtil;
 import com.baidu.majia.utils.NetworkUtil;
 import com.baidu.majia.utils.TextToast;
 
+import org.litepal.LitePalApplication;
+
 
 public class App extends Application {
 
@@ -18,6 +20,9 @@ public class App extends Application {
         ImageUtil.init(this, FileManager.getHomeDir());
         TextToast.init(this);
         NetworkUtil.init(this);
-        CrashHandler.getInstance().init(this);
+        // CrashHandler.getInstance().init(this);
+
+        // 初始化数据库
+        LitePalApplication.initialize(this);
     }
 }
