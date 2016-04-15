@@ -5,8 +5,8 @@
 
     <!-- bottom -->
     <dimen name="main_tab_height">48dp</dimen>
-    <dimen name="main_tab_icon_width">24dp</dimen>
-    <dimen name="main_tab_icon_height">24dp</dimen>
+    <dimen name="main_tab_icon_width">20dp</dimen>
+    <dimen name="main_tab_icon_height">20dp</dimen>
 
     <!-- top -->
     <dimen name="main_title_height">48dp</dimen>

@@ -5,6 +5,10 @@ import com.google.gson.Gson;
 
 
 public class JsonUtil {
+
+    //返回状态码
+    public int code;
+
     /**
      * convert java object to json string
      *
@@ -26,5 +30,6 @@ public class JsonUtil {
     public static <T> T getEntity(String json, Class<T> clazz) {
         return new Gson().fromJson(json, clazz);
     }
+
 
 }

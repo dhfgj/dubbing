@@ -1,5 +1,6 @@
 package com.baidu.majia.base;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -17,6 +18,8 @@ import cz.msebera.android.httpclient.Header;
 
 
 public abstract class BaseFragment extends Fragment implements IInit {
+
+    protected Context mContext;
 
     @Nullable
     @Override
@@ -72,5 +75,11 @@ public abstract class BaseFragment extends Fragment implements IInit {
     public void onDestroyView() {
         super.onDestroy();
         ButterKnife.unbind(this);
+    }
+
+    @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        mContext = getActivity();
     }
 }
